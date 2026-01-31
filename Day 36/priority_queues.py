@@ -41,6 +41,36 @@ class BinaryHeap:
             self.arr[ind], self.arr[smallest] = self.arr[smallest], self.arr[ind]
             self.heapify(smallest)
 
+    def get_min(self):
+        if self.size == 0:
+            return float('inf')
+        return self.arr[0]
+    
+    def extract_min(self):
+        if self.size <= 0 :
+            return float('inf')
+        if self.size == 1:
+            self.size -= 1
+            return self.arr[0]
+        
+        mini = self.arr[0]
+        self.arr[0] = self.arr[self.size-1]
+        self.size -= 1
+
+        self.heapify(0)
+        return mini
+    def decrease_key(self, i, val):
+        self.arr[i] = val 
+        while i != 0 and self.arr[self.parent(i)] > self.arr[i]:
+            self.arr[self.parent(i)], self.arr[i] = self.arr[i], self.arr[self.parent(i)]
+            i = self.parent(i)
+
+    def delete(self, i):
+        # First decrease its value to -infinity
+        self.decrease_key(i, float("-inf"))
+        # Then extract minimum (which removes it)
+        self.extract_min()
+
     def print_heap(self):
         for i in range(self.size):
             print(self.arr[i], end=" ")
