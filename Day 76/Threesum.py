@@ -16,6 +16,7 @@ def threesum(nums):
             else:
                 res.append([a, nums[l], nums[r]])
                 l+=1
+                #remove duplicate [0,0,0] [0,0,0] for [0,0,0,0] input if this while loop do not exist
                 while nums[l] == nums[l-1] and l<r:
                     l+=1
     return res
