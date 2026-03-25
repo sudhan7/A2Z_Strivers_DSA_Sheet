@@ -12,5 +12,5 @@ def maximum_subarray(arr):
     
     return max_len
 
-arr =[-2, -3, -7, -2, -10, -4]  
+arr =[1, -3, 3, 5, -10, -4]  
 print(maximum_subarray(arr))
