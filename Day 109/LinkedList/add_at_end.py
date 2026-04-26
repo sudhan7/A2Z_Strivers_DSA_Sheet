@@ -28,5 +28,4 @@ while temp:
     print(temp.data, end=" -> ")
     temp = temp.next
 print("None")
-# Output: 1 -> 2 -> 3 -> None
         
