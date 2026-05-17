@@ -8,6 +8,6 @@ def containsNearbyDuplicate(nums,k):
         mpp[nums[i]] = i
     return False
 
-nums = [1,2,3,1]
+nums = [1,2,3,9]
 k = 3
 print(containsNearbyDuplicate(nums,k))
