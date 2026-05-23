@@ -16,5 +16,5 @@ s = "leetcode"
 print(first_unique(s))
 s = "loveleetcode"
 print(first_unique(s))
-s = "aabb"
+s = "aabbce"
 print(first_unique(s))
