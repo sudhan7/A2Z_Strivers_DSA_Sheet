@@ -28,7 +28,7 @@ root1.right = TreeNode(2)
 root1.left.left = TreeNode(3)
 root1.left.right = TreeNode(3)
 root1.left.left.left = TreeNode(4)
-root1.left.left.right = TreeNode(4)
+root1.left.left.right = TreeNode(5)
 
 print(isbalanced(root))
 print(isbalanced(root1))
