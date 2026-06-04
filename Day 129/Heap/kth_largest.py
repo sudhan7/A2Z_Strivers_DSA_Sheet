@@ -16,3 +16,7 @@ print(kthlargest(nums,k))
 nums = [3,2,1,5,6,4]
 k = 2
 print(kthlargest(nums,k))
+
+nums = [3,2,1,5,6,4]
+k = 4
+print(kthlargest(nums,k))
